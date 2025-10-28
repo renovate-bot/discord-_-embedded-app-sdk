@@ -1,5 +1,62 @@
 # Changelog
 
+## [3.0.0](https://github.com/renovate-bot/discord-_-embedded-app-sdk/compare/v2.4.0...v3.0.0) (2025-10-28)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove referrer_id from shareLink API ([#312](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/312))
+
+### Features
+
+* add activity invite command ([#305](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/305)) ([5d54cde](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/5d54cde51834229900f85c9aa2400c5b32eabd63))
+* add ACTIVITY_JOIN event ([#324](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/324)) ([9d9e155](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/9d9e155fb238779def00d53ca441947a024f7760))
+* add applications.commands to OAuthScopes and use the type in authorize command ([#223](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/223)) ([d4d319d](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/d4d319d96377d6bfe1b082b7399ce51872e2e2a4))
+* add CommandInput and CommandResponse as types ([6f65ef3](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/6f65ef3c8c80c6aa603e9fc6fbc3d8f85dab9f72))
+* add custom_id and referrer_id query params ([96777ac](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/96777ac976693309be9019657a60af4044765436))
+* add MANAGE_GUILD to Constants.Permissions ([#268](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/268)) ([17a2012](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/17a2012812384bc6298babebfc619ea17a438b89))
+* add new GetRelationships command ([#301](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/301)) ([8bff274](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/8bff274ee5a9a987058fce01115c636505d8b81f))
+* add new GetUser command ([#308](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/308)) ([9aa310f](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/9aa310f3864aab435f351fdf120e28b800af3626))
+* add Quests commands + event  ([#329](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/329)) ([5a3b04f](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/5a3b04f8c1713c64724ed819de145b033a6214c4))
+* add RELATIONSHIP_UPDATE event ([#306](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/306)) ([7d3b134](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/7d3b13486bac04821391045ff2cff5ff093c7310))
+* add sdk_version to HANDSHAKE message ([#262](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/262)) ([86a3a17](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/86a3a178b4fe37b6e1b8a8f6a719c7068a7ca326))
+* add shareLink command ([#297](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/297)) ([effd59b](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/effd59b378cd969ba82551d95b35e6ac12532ad1))
+* add state/details/large/small_url ([#319](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/319)) ([f81b623](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/f81b623234cda079e98aaab28458ec37b7e87005))
+* add UPDATE_CURRENT_GUILD_MEMBER sdk hook and playground page ([#218](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/218)) ([d25deb2](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/d25deb298a03c69371b4a0deef7db20279b7e2a8))
+* expose source and sourceOrigin class properties ([#66](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/66)) ([f1590b3](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/f1590b3980abff50a354c89be5e347fb9878d8d4))
+* openExternalLink returns a `{ opened:  boolean }` result ([#282](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/282)) ([d3bd375](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/d3bd375094735a5994f302a29f1845510cc7e045))
+* remove referrer_id from shareLink API ([#312](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/312)) ([1186ade](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/1186adeedb07ebb42ee5140a7e53defe71cd2e1a))
+* rewrite requests through /.proxy/ using patchUrlMappings  ([#222](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/222)) ([44787c5](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/44787c52a9611c0dcb9214d7deb49942687011bc))
+* upgrade sync script and run it ([#336](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/336)) ([b284080](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/b284080a80545ed5a4c0f87d63e4961888c2c2ed))
+
+
+### Bug Fixes
+
+* add back frameId to mock ([#97](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/97)) ([9a21ca2](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/9a21ca211802691efc503261306f5e9aa5e253ab))
+* add new params to IDiscordSDK ([#293](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/293)) ([6182474](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/618247414b6ae18e9c2fea5b58e2cb49bdeba354))
+* **authorize:** remove token response type ([#273](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/273)) ([f45973b](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/f45973babc63dcd33281370b2db969c4cb1b38ca))
+* bump flag numbers to correct value ([#270](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/270)) ([61f4381](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/61f4381fa159a5d715c0db6f9be043702d54bcf3))
+* **deps:** unpin big-integer and decimal.js-light ([#156](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/156)) ([860cd87](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/860cd874dc7ea21beec58a8adbf81661b910e80d))
+* **deps:** update dependency @types/uuid to v10 ([#221](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/221)) ([46cf04e](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/46cf04e89a21194eb15425d64a1ad3b1f25461a7))
+* **deps:** update dependency esbuild to ^0.23.0 ([#226](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/226)) ([63bf436](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/63bf436e763c001dc03a02969576aceff9b9425d))
+* **deps:** update dependency esbuild to v0.21.3 ([#198](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/198)) ([08e77ef](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/08e77ef4d80215611c87c5b981533890f8ee19e0))
+* **deps:** update dependency eventemitter3 to v5 ([#187](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/187)) ([2aa5971](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/2aa5971600d339e24aa0648358546b705600b095))
+* **deps:** update dependency uuid to v10 ([#217](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/217)) ([c7ffadf](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/c7ffadf83f927f8c671b0a8cb9424edcdb1101ec))
+* **deps:** update dependency uuid to v11 ([#275](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/275)) ([84735bd](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/84735bd85d02e4ef502722b69c9a8b4a3b1a57f7))
+* **deps:** update to uuid v9 ([#118](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/118)) ([a25bde1](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/a25bde13b3061590d549e4076f51b832f14507cc))
+* do not prepend PROXY_PREFIX if already prepends path ([#237](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/237)) ([c564b2d](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/c564b2dc26ee0f9d687bc22364d2e6677c49eff8))
+* don't infinitely set the src which triggers the mutation observer again ([#287](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/287)) ([7adc57e](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/7adc57e9aa020d8beac8839eb4da948d115fe40b))
+* **patchUrlMappings:** fix double slash when rewriting urls with prefix ending in `/`  ([#333](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/333)) ([2ebe536](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/2ebe536acc2c0e5e7ba34926d5e907cb18a455c3))
+* **patchUrlMappings:** recreate script elements when patching their src attribute ([#242](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/242)) ([b915ebf](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/b915ebf06620b0af758aeeed51a312bde7c42e74))
+* prepend /.proxy to discord-starter-activity token fetch ([#233](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/233)) ([6e2cd1d](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/6e2cd1dda417b1790faae0d777d557ddfddf4c8f))
+* prevent multiple remappings from applying the .proxy path twice ([#252](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/252)) ([1c63d30](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/1c63d3043bd7ad79ee2b753a2765e01e97fa566c))
+* properly export the quest commands ([#334](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/334)) ([e096ab4](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/e096ab40cb9a02156e8cbe2d9f208b315ac42a98))
+* remove unavailable options from "setActivity" command ([#193](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/193)) ([e70decc](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/e70deccc7a473eda53f90d2c643e241dfe683b5b))
+* remove unnecessary FILE_EXTENSION_REGEX check from matchAndRewriteURL ([#65](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/65)) ([4616621](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/46166212f12e07ba08886ceabfb28d8f1767adf9))
+* remove unused frameId from mock ([#75](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/75)) ([facc2f3](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/facc2f3f96f6f56191d8f7311b6057f04eb8e02a))
+* support ssr and non-browser environments ([#45](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/45)) ([2beca00](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/2beca00fa2f07be5a6c6837a95513e24c9de5c8d))
+* sync schema for shareLink command ([#311](https://github.com/renovate-bot/discord-_-embedded-app-sdk/issues/311)) ([0f8855d](https://github.com/renovate-bot/discord-_-embedded-app-sdk/commit/0f8855dec8613338b1dc161ab91153317e0f7e8b))
+
 ## [2.4.0](https://github.com/discord/embedded-app-sdk/compare/v2.3.1...v2.4.0) (2025-09-03)
 
 
